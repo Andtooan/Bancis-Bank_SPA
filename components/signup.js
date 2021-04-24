@@ -5,7 +5,9 @@ const Contact = () => {
 			<div class="left"></div>
 			<div class="right">
 
+
 				<form id="form" name="formulario" method="" action="">
+
 					<h2>Registro</h2>
 					<label for="name"> </label>
 					<input name="name" type="text" class="field" placeholder="Nombre">

@@ -1,5 +1,6 @@
 
 const login = () => {
+
     return `
 	<div id="data-router">
 	<img class="wave" src="img/wave.png" alt="back">
@@ -8,6 +9,7 @@ const login = () => {
 			<img src="img/finance.svg" alt="logo">
 		</div>
 		<div class="login-content">
+
 			<form method="POST" id="form" name="formulario" action="">
 				<img src="img/ban.png">
 				<h2 class="title">Bienvenido</h2>
@@ -17,7 +19,10 @@ const login = () => {
            		   </div>
            		   <div class="div">
            		   		<h5>Email</h5>
+
            		   		<input name="email" type="email" class="input" placeholder="Email">
+
+           		 
            		   </div>
            		</div>
            		<div class="input-div pass">

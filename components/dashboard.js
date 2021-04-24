@@ -1,4 +1,6 @@
+
 const dashboard = () => {
+
     return `
     <div id="data-router">
  <input type="checkbox" name="" id="sidebar-toggle"">

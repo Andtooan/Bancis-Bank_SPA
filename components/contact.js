@@ -1,4 +1,7 @@
+
 const contact = () => {
+
+
     return `
     <div id="data-router">          
       <div class="contact-box">
