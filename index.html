@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles/auth.css" />
+    <link href="./styles/contact.css" />
+    <link href="./styles/dashboard.css" />
+    <link href="./styles/login.css" />
+    <link href="./styles/signup.css" />
+    <link href="./styles/signupadmin.css" />
+    <title>Banciss Bank</title>
+  </head>
+  <body>
+    <img class="wave" src="./assets/wave.png" alt="back" />
+    <div class="container">
+      <div class="img">
+        <img src="./assets/finance.svg" alt="logo" />
+      </div>
+      <div class="login-content">
+        <form
+          method="POST"
+          id="form"
+          name="formulario"
+		  action=""
+        >
+          <img src="./assets/ban.png" />
+          <h2 class="title">Bienvenido</h2>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <h5>Email</h5>
+              <input name="email" type="email" class="input" placeholder="Email"/>
+            </div>
+          </div>
+          <div class="input-div pass">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="div">
+              <h5>Contraseña</h5>
+              <input name="password" type="password" class="input" placeholder="Contraseña"/>
+            </div>
+          </div>
+          <input name="submit" type="submit" class="btn" value="Login" />
+        </form>
+
+        <!--Termina aqui el cambio de post a js-->
+      </div>
+    </div>
+    <div id="elem">
+      <script type="text/javascript" src="js/main.js"></script>
+    </div>
+      <!--Enrutamiento-->
+    <div id="data-router"></div>
+    <script src="components/aunth.js"></script>
+    <script src="components/contact.js"></script>
+    <script src="components/dashboard.js"></script>
+    <script src="components/signup-admin.js"></script>
+    <script src="components/signup.js"></script>
+    <script src="routes.js"></script>
+  </body>
+</html>
