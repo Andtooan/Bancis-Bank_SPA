@@ -1,6 +1,6 @@
 
 
-const auth = () => {
+const Auth = () => {
 	return `
 	<div id="data-router">
 		<div class="container">

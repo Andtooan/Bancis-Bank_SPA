@@ -1,11 +1,10 @@
+
 const SignUp = () => {
-    return `
+	return `
 	<div class="container">
 		<div class="contact-box">
-			<div class="left"></div>
+			<div class="left">
 			<div class="right">
-
-
 				<form id="form" name="formulario" method="" action="">
 
 					<h2>Registro</h2>
@@ -20,7 +19,8 @@ const SignUp = () => {
 				</form>
 				<button class="btn">Enviar</button>
 			</div>
+			</div>
 		</div>
 	</div>
 	`;
-}
+};

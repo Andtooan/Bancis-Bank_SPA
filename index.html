@@ -17,51 +17,58 @@
 		<title>Banciss Bank</title>
 	</head>
 	<body>
-		<img class="wave" src="./assets/wave.png" alt="back" />
-		<div class="container">
-			<div class="img">
-				<img src="./assets/finance.svg" alt="logo" />
-			</div>
-			<div class="login-content">
-				<form id="form" name="formulario" >
-					<img src="./assets/ban.png" />
-					<h2 class="title">Bienvenido</h2>
-					<div class="input-div one">
-						<div class="i">
-							<i class="fas fa-user"></i>
+		<div id="data-router">
+			<img class="wave" src="./assets/wave.png" alt="back" />
+			<div class="container">
+				<div class="img">
+					<img src="./assets/finance.svg" alt="logo" />
+				</div>
+				<div class="login-content">
+					<form id="form" name="formulario">
+						<img src="./assets/ban.png" />
+						<h2 class="title">Bienvenido</h2>
+						<div class="input-div one">
+							<div class="i">
+								<i class="fas fa-user"></i>
+							</div>
+							<div class="div">
+								<h5>Email</h5>
+								<input
+									name="email"
+									type="email"
+									class="input"
+								/>
+							</div>
 						</div>
-						<div class="div">
-							<h5>Email</h5>
-							<input name="email" type="email" class="input"  />
+						<div class="input-div pass">
+							<div class="i">
+								<i class="fas fa-lock"></i>
+							</div>
+							<div class="div">
+								<h5>Contraseña</h5>
+								<input
+									name="password"
+									type="password"
+									class="input"
+								/>
+							</div>
 						</div>
-					</div>
-					<div class="input-div pass">
-						<div class="i">
-							<i class="fas fa-lock"></i>
-						</div>
-						<div class="div">
-							<h5>Contraseña</h5>
-							<input
-								name="password"
-								type="password"
-								class="input"
-							/>
-						</div>
-					</div>
-					<button class="btn">Login</button>
-				</form>
+						<button class="btn" onclick="loginPost()">
+							Sign in
+						</button>
+						<button class="btn" onclick="loadRoute('/signup')">
+							Sign up
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
-		<!--Enrutamiento-->
-		<div id="data-router"></div>
+		<script src="./components/signup.js"></script>
+		<script src="./components/auth.js"></script>
+		<script src="./components/contact.js"></script>
+		<script src="./components/dashboard.js"></script>
+		<script src="./components/signup-admin.js"></script>
 		<script src="./index.js"></script>
-		<script src="components/auth.js"></script>
-		<script src="components/contact.js"></script>
-		<script src="components/dashboard.js"></script>
-
-		<!-- <script src="components/login.js"></script> -->
-		<script src="components/signup-admin.js"></script>
-		<script src="components/signup.js"></script>
-		<script src="routes.js"></script>
+		<script src="./routes.js"></script>
 	</body>
 </html>

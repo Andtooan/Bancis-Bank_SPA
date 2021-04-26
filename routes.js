@@ -1,36 +1,32 @@
-  const routesDict = {
-    '/': {
-      path: "/",
-      template: login,
-    },
-    '/contact': {
-      path: "/contact",
-      template: Contact,
-    },
-    '/auth': {
-      path: "/auth",
-      template: auth,
-    },
-    '/signup-admin': {
-      path: "/signup-admin",
-      template: SignUpAdmin,
-    },
-    '/signup': {
-      path: "/signup",
-      template: SignUp,
-    },
-    '/dashboard': {
-      path: "/dashboard",
-      template: Dashboard,
-    }
-  }
+const routes = {
+	'/contacto': {
+		path: "/contacto",
+		template: Contact,
+	},
+	'/signup': {
+		path: "/signup",
+		template: SignUp,
+	},
+	'/signup-admin': {
+		path: "/signup-admin",
+		template: SignUpAdmin,
+	},
+	'/auth': {
+		path: "/auth",
+		template: Auth,
+	},
+	'/home': {
+		path: "/home",
+		template: Dashboard,
+	}
+}
 
-  const loadRoute = async (path) => {
+const loadRoute = async (path) => {
     const content = document.getElementById('data-router');
-    const rta = routesDict[path];
+    const rta = routes[path];
     if (rta) {
-      content.innerHTML = await rta.template();
+	    content.innerHTML = await rta.template();
     } else {
-      content.innerHTML = '<p>not found 404</p>';
+    	content.innerHTML = '<p>not found 404</p>';
     }
-  } 
+}
