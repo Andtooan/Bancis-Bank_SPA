@@ -1,5 +1,5 @@
 
-const contact = () => {
+const Contact = () => {
 
 
     return `

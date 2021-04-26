@@ -1,5 +1,5 @@
 
-const dashboard = () => {
+const Dashboard = () => {
 
     return `
     <div id="data-router">

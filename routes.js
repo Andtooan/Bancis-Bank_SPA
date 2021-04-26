@@ -1,30 +1,3 @@
-const routes = [
-    {
-      path: "/login",
-      template: login,
-    },
-    {
-      path: "/contact",
-      template: contact,
-    },
-    {
-      path: "/aunth",
-      template: auth,
-    },
-    {
-      path: "/singup-admin",
-      template: signup-admin,
-    },
-    {
-      path: "/signup",
-      template: signup,
-    },
-    {
-      path: "/dashboard",
-      template: dashboard,
-    },
-  ];
-  
   const routesDict = {
     '/': {
       path: "/",
@@ -32,26 +5,26 @@ const routes = [
     },
     '/contact': {
       path: "/contact",
-      template: contact,
+      template: Contact,
     },
     '/auth': {
-      path: "/aunth",
+      path: "/auth",
       template: auth,
     },
     '/signup-admin': {
       path: "/signup-admin",
-      template: signup-admin,
+      template: SignUpAdmin,
     },
     '/signup': {
       path: "/signup",
-      template: signup,
+      template: SignUp,
     },
     '/dashboard': {
       path: "/dashboard",
-      template: dashboard,
+      template: Dashboard,
     }
   }
-  
+
   const loadRoute = async (path) => {
     const content = document.getElementById('data-router');
     const rta = routesDict[path];

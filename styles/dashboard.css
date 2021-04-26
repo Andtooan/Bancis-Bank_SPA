@@ -404,7 +404,7 @@ table button.even {
 
 @media only screen and (max-width:1024) {
     .sidebar {
-        left -100%;
+        left: -100%;
         z-index: 30;
     }
 

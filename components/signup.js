@@ -1,4 +1,4 @@
-const Contact = () => {
+const SignUp = () => {
     return `
 	<div class="container">
 		<div class="contact-box">

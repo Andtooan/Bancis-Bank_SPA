@@ -1,5 +1,5 @@
 
-const Contact = () => {
+const SignUpAdmin = () => {
     return `
 	<div id="data-router">
 	<div class="container">
