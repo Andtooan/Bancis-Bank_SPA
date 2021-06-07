@@ -1,8 +1,7 @@
 
-
-const Auth = () => {
-	return `
-	<div id="data-router">
+const auth = () => {
+  const view = `
+   <div id="data-router">
 		<div class="container">
 			<div class="contact-box">
 				<div class="left"></div>
@@ -19,8 +18,14 @@ const Auth = () => {
 			</div>
 		</div>
 	</div>
-	`;
-  };
+  `;
+
+  return view;
+}
+
+export default auth;
+
+
   
 
 
